@@ -68,7 +68,7 @@ app.delete('/api/user/:id', (req, res) => {
 app.use(errorHandler);
 
 // Export the Express app instead of listening to a port
-// module.exports = app;
-app.listen(3000, ()=>{
-    console.log("server is listing on 3000")
-})
+module.exports = app;
+// app.listen(3000, ()=>{
+//     console.log("server is listing on 3000")
+// })
